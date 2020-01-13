@@ -1,0 +1,8 @@
+#Opening facebook using selenium
+
+from selenium import webdriver  ##Imports the selenium web driver
+driver = webdriver.Firefox()    ##Create a Firefox Webdriver
+driver.get("https://www.facebook.com/")  ##Tells the driver to go to facebook.com
+driver.find_element_by_css_selector("#email").send_keys("username")
+driver.find_element_by_css_selector("#pass").send_keys("password")
+driver.find_element_by_css_selector("#u_0_q").click()
